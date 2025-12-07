@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.5.57" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-
-<meta name="author" content="Tiffany Timbers &amp; Jordan Bourak" />
+<meta name="author" content="Tiffany Timbers &amp; Jordan Bourak">
 
 <title>DSCI 310: Historical Horse Population in Canada – website</title>
 <style>
@@ -27,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -44,7 +43,23 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,34 +118,32 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body>
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="/index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">website</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
-  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -145,7 +158,17 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <div id="quarto-toc-target"></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aim" id="toc-aim" class="nav-link active" data-scroll-target="#aim"><span class="header-section-number">1</span> Aim</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="header-section-number">2</span> Data</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">3</span> Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">4</span> Results</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5</span> References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="qmd_example.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -174,49 +197,43 @@ window.Quarto = {
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#aim" id="toc-aim"><span class="header-section-number">1</span> Aim</a></li>
-  <li><a href="#data" id="toc-data"><span class="header-section-number">2</span> Data</a></li>
-  <li><a href="#methods" id="toc-methods"><span class="header-section-number">3</span> Methods</a></li>
-  <li><a href="#results" id="toc-results"><span class="header-section-number">4</span> Results</a></li>
-  <li><a href="#references" id="toc-references"><span class="header-section-number">5</span> References</a></li>
-  </ul>
-</nav>
+
 <section id="aim" class="level2" data-number="1">
-<h2 data-number="1"><span class="header-section-number">1</span> Aim</h2>
+<h2 data-number="1" class="anchored" data-anchor-id="aim"><span class="header-section-number">1</span> Aim</h2>
 <p>This project explores the historical population of horses in Canada between 1906 and 1972 for each province.</p>
 </section>
 <section id="data" class="level2" data-number="2">
-<h2 data-number="2"><span class="header-section-number">2</span> Data</h2>
-<p>Horse population data were sourced from the <a href="http://open.canada.ca/en/open-data">Government of Canada’s Open Data website</a> <span class="citation" data-cites="govcanada2017a govcanada2017b">(<a href="#ref-govcanada2017a" role="doc-biblioref"><strong>govcanada2017a?</strong></a>; <a href="#ref-govcanada2017b" role="doc-biblioref"><strong>govcanada2017b?</strong></a>)</span>.</p>
+<h2 data-number="2" class="anchored" data-anchor-id="data"><span class="header-section-number">2</span> Data</h2>
+<p>Horse population data were sourced from the <a href="http://open.canada.ca/en/open-data">Government of Canada’s Open Data website</a> <span class="citation" data-cites="horses1 horses2">(<a href="#ref-horses1" role="doc-biblioref">Government of Canada 2017a</a>, <a href="#ref-horses2" role="doc-biblioref">2017b</a>)</span>.</p>
 </section>
 <section id="methods" class="level2" data-number="3">
-<h2 data-number="3"><span class="header-section-number">3</span> Methods</h2>
-<p>The Python programming language <span class="citation" data-cites="vanrossum2009">(<a href="#ref-vanrossum2009" role="doc-biblioref"><strong>vanrossum2009?</strong></a>)</span> and the following Python packages were used to perform the analysis: pandas <span class="citation" data-cites="mckinney2010">(<a href="#ref-mckinney2010" role="doc-biblioref"><strong>mckinney2010?</strong></a>)</span>, altair <span class="citation" data-cites="vanderplas2018">(<a href="#ref-vanderplas2018" role="doc-biblioref"><strong>vanderplas2018?</strong></a>)</span>, click <span class="citation" data-cites="team2020">(<a href="#ref-team2020" role="doc-biblioref"><strong>team2020?</strong></a>)</span>, as well as Quarto <span class="citation" data-cites="allaire2022">(<a href="#ref-allaire2022" role="doc-biblioref"><strong>allaire2022?</strong></a>)</span>.</p>
-<p><em>Note: this report is adapted from Timbers (2020).</em></p>
+<h2 data-number="3" class="anchored" data-anchor-id="methods"><span class="header-section-number">3</span> Methods</h2>
+<p>The Python programming language <span class="citation" data-cites="Python">(<a href="#ref-Python" role="doc-biblioref">Van Rossum and Drake 2009</a>)</span> and the following Python packages were used to perform the analysis: pandas <span class="citation" data-cites="pandas">(<a href="#ref-pandas" role="doc-biblioref">McKinney 2010</a>)</span>, altair <span class="citation" data-cites="altair">(<a href="#ref-altair" role="doc-biblioref">VanderPlas 2018</a>)</span>, click <span class="citation" data-cites="click">(<a href="#ref-click" role="doc-biblioref">Team 2020</a>)</span>, as well as Quarto <span class="citation" data-cites="Allaire_Quarto_2022">(<a href="#ref-Allaire_Quarto_2022" role="doc-biblioref">Allaire et al. 2022</a>)</span>.</p>
+<p><em>Note: this report is adapted from Timbers <span class="citation" data-cites="ttimbers-horses">(<a href="#ref-ttimbers-horses" role="doc-biblioref">Timbers 2020</a>)</span>.</em></p>
 </section>
 <section id="results" class="level2" data-number="4">
-<h2 data-number="4"><span class="header-section-number">4</span> Results</h2>
-<div id="fig-horse" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-horse-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../results/horse_pops_plot.png" class="img-fluid" style="width:75.0%" />
+<h2 data-number="4" class="anchored" data-anchor-id="results"><span class="header-section-number">4</span> Results</h2>
+<div id="fig-pop" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/horse_pops_plot.png" class="img-fluid figure-img" style="width:75.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-horse-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure 1: House Population
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Horse populations for all provinces in Canada from 1906 - 1972.
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-horse" class="quarto-xref">Figure 1</a> Figure 1: Horse populations for all provinces in Canada from 1906 - 1972.</p>
-<p>We can see from Figure 1 that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada. All provinces have had a decline in horse populations since 1940. This is likely due to the rebound of the Canadian automotive industry after the Great Depression and the Second World War. An interesting follow-up visualisation would be car sales per year for each Province over the time period visualised above to further support this hypothesis.</p>
-<p>Suppose we were interested in looking in more closely at the province with the highest spread (in terms of standard deviation) of horse populations. We present the standard deviations in <strong>?@tbl-horses-sd</strong>.</p>
-<p>Table 1. Standard deviation of historical (1906-1972) horse populations for each Canadian province.</p>
-<div id="668bb15d" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="1">
-<table class="caption-top">
+<p>We can see from <a href="#fig-pop" class="quarto-xref">Figure&nbsp;1</a> that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada. All provinces have had a decline in horse populations since 1940. This is likely due to the rebound of the Canadian automotive industry after the Great Depression and the Second World War. An interesting follow-up visualisation would be car sales per year for each Province over the time period visualised above to further support this hypothesis.</p>
+<p>Suppose we were interested in looking in more closely at the province with the highest spread (in terms of standard deviation) of horse populations. We present the standard deviations in <a href="#tbl-sd" class="quarto-xref">Table&nbsp;1</a>.</p>
+<div class="cell" data-execution_count="2">
+<div id="tbl-sd" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="2">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Standard deviation of historical (1906-1972) horse populations for each Canadian province.
+</figcaption>
+<div aria-describedby="tbl-sd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="2">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Province</th>
@@ -264,37 +281,58 @@ Figure 1: House Population
 </table>
 </div>
 </div>
+</figure>
+</div>
+</div>
 <p>Note that we define standard deviation (of a sample) as</p>
 <p><span class="math display">\[s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }\]</span></p>
 <p>Additionally, note that in Table 1 we consider the sample standard deviation of the number of horses during the same time span as Figure 1.</p>
-<div id="fig-largest-sd" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
+<div id="fig-largest-sd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-largest-sd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../results/horse_pops_plot_largest_sd.png" class="img-fluid" style="width:65.0%" />
+<img src="../results/horse_pops_plot_largest_sd.png" class="img-fluid figure-img" style="width:65.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-largest-sd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure 2: Largest SD Province
+Figure&nbsp;2: Horse populations for the province with the largest standard deviation.
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-largest-sd" class="quarto-xref">Figure 2</a> Figure 2: Horse populations for the province with the largest standard deviation.</p>
-<p>In <a href="#fig-largest-sd" class="quarto-xref">Figure 2</a> we zoom in and look at the province of {{largest_sd}}, which had the largest spread of values in terms of standard deviation.</p>
+<p>In <a href="#fig-largest-sd" class="quarto-xref">Figure&nbsp;2</a> we zoom in and look at the province of Saskatchewan, which had the largest spread of values in terms of standard deviation.</p>
 </section>
 <section id="references" class="level2" data-number="5">
-<h2 data-number="5"><span class="header-section-number">5</span> References</h2>
-<div id="refs" role="list">
+<h2 data-number="5" class="anchored" data-anchor-id="references"><span class="header-section-number">5</span> References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Allaire_Quarto_2022" class="csl-entry" role="listitem">
+Allaire, J. J., Charles Teague, Carlos Scheidegger, Yihui Xie, and Christophe Dervieux. 2022. <span>“<span>Quarto</span>.”</span> <a href="https://doi.org/10.5281/zenodo.5960048">https://doi.org/10.5281/zenodo.5960048</a>.
+</div>
+<div id="ref-horses1" class="csl-entry" role="listitem">
+Government of Canada. 2017a. <span>“Horses, Number on Farms at June 1 and at December 1.”</span> Open Government - Open Data. <a href="https://open.canada.ca/data/en/dataset/a3ecf553-8ec4-4551-a0fe-8df1472c6cf7">https://open.canada.ca/data/en/dataset/a3ecf553-8ec4-4551-a0fe-8df1472c6cf7</a>.
+</div>
+<div id="ref-horses2" class="csl-entry" role="listitem">
+———. 2017b. <span>“Horses, Number on Farms at June 1, Farm Value Per Head and Total Farm Value.”</span> Open Government - Open Data. <a href="https://open.canada.ca/data/en/dataset/e175ef9c-98f0-49b3-8131-ca0e3895a0cb">https://open.canada.ca/data/en/dataset/e175ef9c-98f0-49b3-8131-ca0e3895a0cb</a>.
+</div>
+<div id="ref-pandas" class="csl-entry" role="listitem">
+McKinney, Wes. 2010. <span>“Data Structures for Statistical Computing in Python.”</span> In <em>Proceedings of the 9th Python in Science Conference</em>, edited by Stéfan van der Walt and Jarrod Millman, =51–56.
+</div>
+<div id="ref-click" class="csl-entry" role="listitem">
+Team, Pallets. 2020. <em>Click</em>. <a href="https://click.palletsprojects.com/">https://click.palletsprojects.com/</a>.
+</div>
+<div id="ref-ttimbers-horses" class="csl-entry" role="listitem">
+Timbers, Tiffany. 2020. <em>Historical Horse Population in Canada</em>. <a href="https://github.com/ttimbers/equine_numbers_value_canada_parameters">https://github.com/ttimbers/equine_numbers_value_canada_parameters</a>.
+</div>
+<div id="ref-Python" class="csl-entry" role="listitem">
+Van Rossum, Guido, and Fred L. Drake. 2009. <em>Python 3 Reference Manual</em>. Scotts Valley, CA: CreateSpace.
+</div>
+<div id="ref-altair" class="csl-entry" role="listitem">
+VanderPlas, Jake. 2018. <span>“Altair: Interactive Statistical Visualizations for Python.”</span> <em>Journal of Open Source Software</em> 3 (7825, 32): 1057. <a href="https://doi.org/10.21105/joss.01057">https://doi.org/10.21105/joss.01057</a>.
+</div>
+</div>
 
-</div>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar-title">website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar-title">website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:Home">Home</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/index.html">/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:About">About</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/about.html">/about.html</span></p>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-metatitle">DSCI 310: Historical Horse Population in Canada – website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-twittercardtitle">DSCI 310: Historical Horse Population in Canada – website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-ogcardtitle">DSCI 310: Historical Horse Population in Canada – website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-metasitename">website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-twittercarddesc"></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-ogcardddesc"></span></p>
-</div>
+
 </section>
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -716,6 +754,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
-</body>
 
-</html>
+
+
+</body></html>
